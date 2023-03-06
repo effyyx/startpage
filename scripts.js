@@ -8,8 +8,8 @@
 const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
-const lookup = {"/":"/","deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/","#new":""}
-const engine = "duckduckgo"
+const lookup = {"/":"/","deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/"}
+const engine = "google"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
   duckduckgo: "https://duckduckgo.com/?q=",
@@ -47,7 +47,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"Qeitp7A3pl4697Km","label":"reddit","bookmarks":[{"id":"HYLATC4JLOZzHjNk","label":"r/unixporn","url":"https://www.reddit.com/r/unixporn/"},{"id":"3phMibFW40AvscPh","label":"r/linux","url":"https://www.reddit.com/r/linux/"}]},{"id":"xv8BBCKIw8xatAPh","label":"japanese","bookmarks":[{"id":"amBUILvyF5IlYUP0","label":"theway","url":"https://learnjapanese.moe/"},{"id":"7Q74pZG236IEfajh","label":"ankicard","url":"https://animecards.site/"},{"id":"rBYpkqQPkTlHJpXs","label":"resources","url":"https://kuzuri.neocities.org/resources"}]},{"id":"aR9ClFEguFjd7eMk","label":"anime","bookmarks":[{"id":"lj85PqEpbVX5idWY","label":"nyaa","url":"https://nyaa.si/"},{"id":"6EZRadlc4p5lmeee","label":"asstosrt","url":"https://sorz.github.io/asstosrt-wasm/"}]},{"id":"wiPNhoaQZykEa22M","label":"misc","bookmarks":[{"id":"BFDRQMoNYgpS7Qmv","label":"activitywatch","url":"http://localhost:5600/#/home"},{"id":"LdfpSupMVus1ssqJ","label":"youtube","url":"https://www.youtube.com/"},{"id":"tqDGZ3VyWVqCY7ci","label":"github","url":"https://github.com/"}]}]
+const bookmarks = [{"id":"Vqa5i9dytXN6TTPn","label":"reddit","bookmarks":[{"id":"If080v50RjfqGBuG","label":"r/linuxgaming","url":"https://www.reddit.com/r/linux_gaming/"},{"id":"n1u5WxthcbIbzZPy","label":"r/unixporn","url":"https://www.reddit.com/r/unixporn/"},{"id":"Yv0Iksvv6rR9cVpR","label":"r/linux","url":"https://www.reddit.com/r/linux/"}]},{"id":"a3XO3SNepNEKf6kZ","label":"japanese","bookmarks":[{"id":"UEfSaEvEJOeCAvDc","label":"resources","url":"https://kuzuri.neocities.org/resources"},{"id":"ghVQNUALPVlfuoAT","label":"ankicard","url":"https://animecards.site/"},{"id":"pybSMWcZBAs7Ny24","label":"theway","url":"https://learnjapanese.moe/"},{"id":"9E4YXvcH7G7QKKxV","label":"nyaa","url":"https://nyaa.si/"}]},{"id":"TBD5tJI5UE6SH56Z","label":"media","bookmarks":[{"id":"b6UxMyjvLceM9tID","label":"youtube","url":"https://www.youtube.com/"},{"id":"4bDTYqAuHln0amRu","label":"jellyfin","url":"http://127.0.0.10:8096/"}]},{"id":"WDC7TKJG6Ktyo7fK","label":"misc","bookmarks":[{"id":"drSIypxRduAZkgws","label":"activitywatch","url":"http://localhost:5600/#/home"},{"id":"IrxfpCPDQnMlK5Ts","label":"github","url":"https://github.com/"},{"id":"xPnS4AwDX4VSt4Pc","label":"gog","url":"https://gog-games.com/search/all/1/date/desc/any"}]}]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
