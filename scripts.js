@@ -9,7 +9,7 @@ const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
 const lookup = {"/":"/","deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/"}
-const engine = "google"
+const engine = "duckduckgo"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
   duckduckgo: "https://duckduckgo.com/?q=",
@@ -47,7 +47,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"Vqa5i9dytXN6TTPn","label":"reddit","bookmarks":[{"id":"If080v50RjfqGBuG","label":"r/linuxgaming","url":"https://www.reddit.com/r/linux_gaming/"},{"id":"n1u5WxthcbIbzZPy","label":"r/unixporn","url":"https://www.reddit.com/r/unixporn/"},{"id":"Yv0Iksvv6rR9cVpR","label":"r/linux","url":"https://www.reddit.com/r/linux/"}]},{"id":"a3XO3SNepNEKf6kZ","label":"japanese","bookmarks":[{"id":"UEfSaEvEJOeCAvDc","label":"resources","url":"https://kuzuri.neocities.org/resources"},{"id":"ghVQNUALPVlfuoAT","label":"ankicard","url":"https://animecards.site/"},{"id":"pybSMWcZBAs7Ny24","label":"theway","url":"https://learnjapanese.moe/"},{"id":"9E4YXvcH7G7QKKxV","label":"nyaa","url":"https://nyaa.si/"}]},{"id":"TBD5tJI5UE6SH56Z","label":"media","bookmarks":[{"id":"b6UxMyjvLceM9tID","label":"youtube","url":"https://www.youtube.com/"},{"id":"4bDTYqAuHln0amRu","label":"jellyfin","url":"http://127.0.0.10:8096/"}]},{"id":"WDC7TKJG6Ktyo7fK","label":"misc","bookmarks":[{"id":"drSIypxRduAZkgws","label":"activitywatch","url":"http://localhost:5600/#/home"},{"id":"IrxfpCPDQnMlK5Ts","label":"github","url":"https://github.com/"},{"id":"xPnS4AwDX4VSt4Pc","label":"gog","url":"https://gog-games.com/search/all/1/date/desc/any"}]}]
+const bookmarks = [{"id":"TBnYqxYQCuIZASP4","label":"reddit","bookmarks":[{"id":"dZQ6D9jAiFGmtXLl","label":"r/linuxgaming","url":"https://www.reddit.com/r/linux_gaming/"},{"id":"u3ZVAQwspGs0wkem","label":"r/unixporn","url":"https://www.reddit.com/r/unixporn/"},{"id":"M6M1P7FwYI3SrRVA","label":"r/linux","url":"https://www.reddit.com/r/linux/"}]},{"id":"ePCU0v7GhAbLYHNH","label":"japanese","bookmarks":[{"id":"Q6vQfhHHGgaPcdQ9","label":"resources","url":"https://kuzuri.neocities.org/resources"},{"id":"vd1KBq5il0pMeSHj","label":"ankicard","url":"https://animecards.site/"},{"id":"IH4dAv0nTYrRlmqW","label":"theway","url":"https://learnjapanese.moe/"},{"id":"BOEImaTKAfIazbtA","label":"nyaa","url":"https://nyaa.iss.ink/"}]},{"id":"HdsVvewQVP1qEdN3","label":"media","bookmarks":[{"id":"PqlvMbtPrsCx2WKc","label":"youtube","url":"https://www.youtube.com/"},{"id":"ZRpnxq4Cj9BIColZ","label":"jellyfin","url":"http://127.0.0.10:8096/"}]},{"id":"sEjzjp36PeIQirBf","label":"misc","bookmarks":[{"id":"nfUYpkeLuuHlVru1","label":"activitywatch","url":"http://localhost:5600/#/home"},{"id":"92oqrmajB9Ktv75M","label":"github","url":"https://github.com/"},{"id":"Dw0PodZpfHcQHw7p","label":"komga","url":"http://localhost:8080/welcome"}]}]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
